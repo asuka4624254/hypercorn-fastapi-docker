@@ -33,7 +33,7 @@ use_keyfile = os.getenv("KEYFILE", None)
 #binding
 host = os.getenv("HOST", "0.0.0.0")
 ssl_port = os.getenv("SSL_PORT", "443")
-tcp_port = os.getenv("TCP_PORT", "80")
+tcp_port = os.getenv("TCP_PORT", "8080")
 if use_ssl:
     assert ssl_port != tcp_port, "SSL_PORT Must be different than TCP_PORT"
 
