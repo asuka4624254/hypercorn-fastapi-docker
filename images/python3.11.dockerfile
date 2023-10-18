@@ -2,7 +2,7 @@ FROM python:3.11
 
 LABEL author="bynect <bynect@gmail.com>"
 
-RUN python3 -m pip install hypercorn hypercorn[uvloop] hypercorn[trio] trio aioquic hypercorn[h3] fastapi \
+RUN python3 -m pip install hypercorn==0.13.2 hypercorn[uvloop] hypercorn[trio] trio aioquic hypercorn[h3] fastapi \
     --no-cache-dir --no-color --no-python-version-warning --disable-pip-version-check
 
 COPY ./start.sh /start.sh
